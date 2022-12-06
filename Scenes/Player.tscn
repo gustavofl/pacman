@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Sprites/Arcade - Pac-Man - General Sprites (1).png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/Arcade - Pac-Man - General Sprites (1).png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/WallsCollisions.tscn" type="PackedScene" id=3]
 
@@ -43,7 +43,6 @@ animation = "walk"
 [node name="collisionWalls" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 0, 1.19209e-07 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="WallsCollisions" parent="." instance=ExtResource( 3 )]
@@ -51,7 +50,6 @@ visible = false
 
 [node name="circleCollision" type="Area2D" parent="."]
 position = Vector2( 0, 1.19209e-07 )
-scale = Vector2( 1, 1 )
 collision_layer = 16
 collision_mask = 36
 

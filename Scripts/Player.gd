@@ -12,7 +12,7 @@ var speed = 200
 var move_direction = STOPPED
 var old_position
 
-var points = 0
+onready var points = 0
 
 func _ready():
 	old_position = self.global_position
@@ -61,8 +61,7 @@ func _process(_delta):
 
 func collectSmallCoin():
 	points += 10
-	print(points)
+	
 
 func collectLargeCoin():
 	points += 50
-	print(points)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Sprites/small_coin.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/small_coin.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/SmallCoin.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
