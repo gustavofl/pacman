@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arcade - Pac-Man - General Sprites (1).png-fa08253c76d205a07714fbaa3ff969f7.stex"
+path="res://.import/Ghost Red.png-90da479932a736da790a740502925f3e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Arcade - Pac-Man - General Sprites (1).png"
-dest_files=[ "res://.import/Arcade - Pac-Man - General Sprites (1).png-fa08253c76d205a07714fbaa3ff969f7.stex" ]
+source_file="res://Assets/Sprites/Ghost Red.png"
+dest_files=[ "res://.import/Ghost Red.png-90da479932a736da790a740502925f3e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arcade - Pac-Man - General Sprites (1) - Copia.png-df9b8b9c0e6433dcf003d25979526c1b.stex"
+path="res://.import/Ghost Yellow.png-729536e18e2409c8313c38d7f238bcab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Arcade - Pac-Man - General Sprites (1) - Copia.png"
-dest_files=[ "res://.import/Arcade - Pac-Man - General Sprites (1) - Copia.png-df9b8b9c0e6433dcf003d25979526c1b.stex" ]
+source_file="res://Assets/Sprites/Ghost Yellow.png"
+dest_files=[ "res://.import/Ghost Yellow.png-729536e18e2409c8313c38d7f238bcab.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

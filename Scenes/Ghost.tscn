@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/WallsCollisions.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sprite_Frames/Sprites_Ghost_Red.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://Scripts/Ghost.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 27.9, 27.9 )
+
+[sub_resource type="CircleShape2D" id=13]
+radius = 23.0
+
+[node name="Ghost" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource( 3 )
+color = "Red"
+
+[node name="Sprites" type="AnimatedSprite" parent="."]
+scale = Vector2( 3.5, 3.5 )
+frames = ExtResource( 2 )
+animation = "walk_right"
+frame = 1
+playing = true
+
+[node name="collisionWalls" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 1.19209e-07 )
+shape = SubResource( 12 )
+
+[node name="WallsCollisions" parent="." instance=ExtResource( 1 )]
+visible = false
+
+[node name="circleCollision" type="Area2D" parent="."]
+position = Vector2( 0, 1.19209e-07 )
+collision_layer = 4
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="circleCollision"]
+position = Vector2( 0, -1.19209e-07 )
+shape = SubResource( 13 )

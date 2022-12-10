@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PacMan Sprites.png-03c9d88e7ce6b501ee09197a5d3c80ec.stex"
+path="res://.import/Ghost Pink.png-8ab8d033e08518739619b0025cfe5063.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PacMan Sprites.png"
-dest_files=[ "res://.import/PacMan Sprites.png-03c9d88e7ce6b501ee09197a5d3c80ec.stex" ]
+source_file="res://Assets/Sprites/Ghost Pink.png"
+dest_files=[ "res://.import/Ghost Pink.png-8ab8d033e08518739619b0025cfe5063.stex" ]
 
 [params]
 
