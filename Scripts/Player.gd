@@ -8,14 +8,17 @@ const MOVE_RIGHT = 4
 
 var motion = Vector2.ZERO
 var speed = 200
-var move_direction = STOPPED
+var move_direction = MOVE_RIGHT
 var old_position
 var window_width = OS.get_window_size()[0]
+var initial_position
 
 onready var points = 0
 
 func _ready():
 	old_position = self.global_position
+	
+	initial_position = self.global_position
 	
 func _process(_delta):
 	
@@ -68,4 +71,11 @@ func collectLargeCoin():
 
 
 func die():
-	print("morreu")
+	Global.PlayerLifes -= 1
+	
+	if Global.PlayerLifes >= 0:
+		self.position = initial_position
+		move_direction = MOVE_RIGHT
+	else:
+		get_tree().quit()
+

@@ -14,6 +14,10 @@ config/name="PacMan"
 run/main_scene="res://Scenes/Phase_01.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Scripts/Global.gd"
+
 [display]
 
 window/size/width=672
@@ -23,6 +27,12 @@ window/size/resizable=false
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"flags/filter": false
+}
 
 [layer_names]
 
