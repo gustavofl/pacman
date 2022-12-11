@@ -6,17 +6,17 @@ const MOVE_DOWN = 2
 const MOVE_LEFT = 3
 const MOVE_RIGHT = 4
 
-
 var motion = Vector2.ZERO
 var speed = 200
 var move_direction = STOPPED
 var old_position
+var window_width = OS.get_window_size()[0]
 
 onready var points = 0
 
 func _ready():
 	old_position = self.global_position
-
+	
 func _process(_delta):
 	
 	if Input.is_action_pressed("ui_left") and $WallsCollisions.wall_collision_left == false:
@@ -43,9 +43,9 @@ func _process(_delta):
 		$sprites.set_rotation_degrees(180)
 	
 	if self.global_position.x < 0:
-		self.global_position.x = 784 + self.global_position.x
-	if self.global_position.x > 784:
-		self.global_position.x = self.global_position.x - 784
+		self.global_position.x = window_width + self.global_position.x
+	if self.global_position.x > window_width:
+		self.global_position.x = self.global_position.x - window_width
 	
 	var diff_x = abs(self.global_position.x - old_position.x)
 	var diff_y = abs(self.global_position.y - old_position.y)
@@ -61,7 +61,11 @@ func _process(_delta):
 
 func collectSmallCoin():
 	points += 10
-	
+
 
 func collectLargeCoin():
 	points += 50
+
+
+func die():
+	print("morreu")

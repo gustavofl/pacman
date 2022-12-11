@@ -19,3 +19,8 @@ func _process(delta):
 		$Sprites.set_animation("walk_up")
 	if Input.is_action_pressed("ui_down"):
 		$Sprites.set_animation("walk_down")
+
+
+func _on_collisionPlayer_area_entered(area):
+	# kill player
+	area.get_parent().die()

@@ -3,16 +3,16 @@
 [ext_resource path="res://Scripts/WallsCollisions.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 21, 3 )
+extents = Vector2( 21, 1.5 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 21, 3 )
+extents = Vector2( 21, 1.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 3, 21 )
+extents = Vector2( 1.5, 21 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 3, 21 )
+extents = Vector2( 1.5, 21 )
 
 [node name="WallsCollisions" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,7 +22,7 @@ collision_layer = 8
 collision_mask = 2
 
 [node name="collision" type="CollisionShape2D" parent="area_collision_up"]
-position = Vector2( 0, -31 )
+position = Vector2( 0, -25.5 )
 shape = SubResource( 6 )
 
 [node name="area_collision_down" type="Area2D" parent="."]
@@ -30,7 +30,7 @@ collision_layer = 8
 collision_mask = 2
 
 [node name="collision" type="CollisionShape2D" parent="area_collision_down"]
-position = Vector2( 0, 31 )
+position = Vector2( 0, 25.5 )
 shape = SubResource( 8 )
 
 [node name="area_collision_right" type="Area2D" parent="."]
@@ -38,7 +38,7 @@ collision_layer = 8
 collision_mask = 2
 
 [node name="collision" type="CollisionShape2D" parent="area_collision_right"]
-position = Vector2( 31, 0 )
+position = Vector2( 25.5, 0 )
 shape = SubResource( 7 )
 
 [node name="area_collision_left" type="Area2D" parent="."]
@@ -46,7 +46,7 @@ collision_layer = 8
 collision_mask = 2
 
 [node name="collision" type="CollisionShape2D" parent="area_collision_left"]
-position = Vector2( -31, 0 )
+position = Vector2( -25.5, 0 )
 shape = SubResource( 9 )
 
 [connection signal="body_entered" from="area_collision_up" to="." method="_on_area_collision_up_body_entered"]
